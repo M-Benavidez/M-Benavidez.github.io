@@ -1,0 +1,238 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 2. v2.0 | 20110126
+  License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol, ul {
+  list-style: none;
+}
+blockquote, q {
+  quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* Clearfix from W3Cschools */
+
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+/* Header styling */
+
+h1 {
+    font-size: 36px;
+    font-weight: bold;
+    color: Sienna;
+    line-height: 40px;
+}
+
+h2 {
+    font-size: 30px;
+    font-weight: bold;
+    color: Sienna;
+    line-height: 40px;
+}
+
+h3 {
+    font-size: 24px;
+    line-height: 40px;
+}
+
+h4 {
+    font-size: 18px;
+    line-height: 20px;
+}
+h5 {
+    font-size: 14px;
+    line-height: 20px;
+}
+
+h6 {
+    font-size: 12px;
+    line-height: 20px;
+}
+
+/* General typography by Michelle Benavidez */
+
+a:link {
+  text-decoration: none;
+  color: Sienna;
+}
+
+a:visited {
+  color: Sienna;
+}
+
+a:hover {
+  color: #d28460;
+}
+
+a:active {
+  color: Sienna;
+}
+
+body {
+  /*font-family: 'Permanent Marker', cursive;*/
+  font-family: 'Old Standard TT', serif;
+  font-size: 20px;
+  background-color: burlywood;
+  color: cornsilk;
+  margin: 0;
+  overflow-y:scroll;
+}
+
+b {
+    font-weight: bold;
+    color: Sienna;
+}
+
+p {
+  margin-bottom: 20px;
+}
+
+/* Top bar menu */
+
+nav {
+  background-color: Black;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+nav ul {
+  overflow: hidden;
+  max-width: 1040px;
+  margin: auto;
+}
+
+nav li {
+  float: left;
+}
+
+nav a:link, nav a:visited {
+  display: block;
+  text-align: center;
+  padding: 10px 10px;
+  color: White;
+}
+
+nav a:hover, nav a:active {
+  background-color: White;
+  color: Black;
+}
+
+.activelink:link, .activelink:visited {
+  background-color: White;
+  color: Black;
+}
+
+.slogan {
+  margin: auto;
+  margin-top: 40px;
+  padding: 10px;
+  max-width: 1040px;
+}
+
+#logo1 {
+  float: left;
+  width: 30%;
+}
+
+#logo2 {
+  float: left;
+  width: 55%;
+  margin-left: 15%;
+}
+
+/* General Content Layout */
+
+.front {
+  max-width: 960px;
+  margin: auto;
+}
+
+/* Home Page Layout */
+
+#featuredstory {
+  max-width: 900px;
+  margin: 10px auto;
+}
+
+/* News Timeline Layout */
+
+#newsbody {
+  background-image:-webkit-linear-gradient(burlywood, brown);
+}
+
+#newspage h1, #newspage h2, #newspage b {
+  color: Cornsilk;
+}
+
+#newspage span {
+  display: block;
+  padding-bottom: 20px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+#newspage span:hover {
+  color: #d28460;
+}
+
+#newspage div {
+  display: none;
+}
+
+#newspage h4 {
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+/* Lawmen Page Layout */
+
+#lawmen {
+  margin: auto;
+  columns: 450px 2;
+  column-gap: 30px;
+}
+
+#lawmen p {
+  text-align: center;
+}
