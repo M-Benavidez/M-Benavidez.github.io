@@ -1,0 +1,302 @@
+body {
+  background-color: black;
+}
+
+.frame {
+  width: 1000px;
+  height: 600px;
+  background: #d28460;
+  margin: 30px auto;
+  position: relative;
+}
+
+/* Your CSS goes here */
+
+
+
+.book-one{
+	width: 130px;
+	height: 30px;
+	background: white;
+	border-color: black 5px;
+	position:relative;
+	top:390px;
+	left:700px;
+	z-index:6;
+}
+
+.book-two{
+	width:130px;
+	height: 30px;
+	background: gray;
+	border-color:black 5px;
+	position:relative;
+	top:330px;
+	left:700px;
+	z-index:7;
+}
+
+.book-three{
+	width:125px;
+	height:20px;
+	background:red;
+	border-color:black 5px;
+	position:relative;
+	top:280px;
+	left:700px;
+	z-index:8;
+}
+
+.fruit-1{
+	width:80px;
+	height: 50px;
+	background:lightpink;
+	-moz-border-radius: 100px /50px;
+	-webkit-border-radius: 100px /50px;
+	border-radius: 100px / 50px;
+	position: relative;
+	top:210px;
+	left:720px;
+	z-index:9;
+}
+
+
+.fruit-2{
+	width:100px;
+	height:100px;
+	background:#ffffcc;
+	border:solid black 1px;
+	-moz-border-radius: 50px;
+	-webkit-border-radius: 50px;
+	border-radius:50px;
+	position:relative;
+	top:200px;
+	left: 500px;
+	z-index:2;
+}
+
+
+.fruit-3{
+	width: 150px;
+	height: 110px;
+	background-color:yellow;
+    -webkit-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    transform: rotate(90deg);
+	-moz-border-radius: 100px / 50px;
+	-webkit-border-radius: 100px / 50px;
+	border-radius: 100px / 50px;
+	position:relative;
+	top:60px;
+	left:300px;
+	z-index:10;
+}
+
+
+.stem{
+	width:0;
+	height:0;
+	border-left:50px solid transparent;
+	border-right:50px solid transparent;
+	border-top: 100px solid green;
+	position:relative;
+	top:-170px;
+	left:325px;
+	z-index:11;
+}
+.stem-2{
+width: 0;
+	height: 0;
+	border-left: 50px solid transparent;
+	border-right: 50px solid transparent;
+	border-bottom: 100px solid green;
+	position:relative;
+	top:-300px;
+	left:325px;
+	z-index:12;
+}
+
+
+
+
+	*, *:before, *:after{ 
+    box-sizing: border-box; 
+} 
+.vase{ 
+    height: 80px; 
+    width: 150px; 
+    padding: 0px; 
+    background-color: transparent; 
+    border-radius: 30px; 
+    left: 0px; 
+    transform: rotate(90deg) skew(0deg); 
+    -webkit-transform: rotate(90deg) skew(0deg); 
+    border-top: 3px solid #171717; 
+    border-left: 3px solid #171717; 
+    border-right: 3px solid #171717; 
+    border-bottom: 3px solid #171717; 
+    position:relative;
+    top:-270px;
+    left:490px;
+    z-index:1;
+}
+
+.stalk{
+	width: 6px;
+	height: 120px;
+	background: green;
+	position: relative;
+	top: -450px;
+	left: 560px;
+	z-index:3;
+	transform: rotate(5deg);
+}
+			
+
+.leaf{
+	width: 0;
+	height: 0;
+	border-top: 20px solid green;
+	border-left: 20px solid transparent;
+	position: relative;
+	top:-523px;
+	left: 541px;
+	transform: rotate(5deg);
+}
+
+
+.leaf-2{
+	width: 0;
+	height: 0;
+	border-top: 25px solid green;
+	border-right: 25px solid transparent;
+	position: relative;
+	top:-523px;
+	left: 561px;
+	transform: rotate(5deg);
+	z-index:4;
+}
+
+
+.flower{
+   margin: 50px 0;
+   position: relative;
+   display: block;
+   color: white;
+   width: 0px;
+   height: 0px;
+   border-right:  100px solid transparent;
+   border-bottom: 70px  solid white;
+   border-left:   100px solid transparent;
+   -moz-transform:    rotate(35deg) scale(.5);
+   -webkit-transform: rotate(35deg) scale(.5);
+   -ms-transform:     rotate(35deg) scale(.5);
+   -o-transform:      rotate(35deg) scale(.5);
+   position: relative;
+   top:-713px;
+   left:470px;
+   z-index:5;
+
+}
+.flower:before {
+   border-bottom: 80px solid white;
+   border-left: 30px solid transparent;
+   border-right: 30px solid transparent;
+   position: absolute;
+   height: 0;
+   width: 0;
+   top: -45px;
+   left: -65px;
+   display: block;
+   content: '';
+   -webkit-transform: rotate(-35deg);
+   -moz-transform:    rotate(-35deg);
+   -ms-transform:     rotate(-35deg);
+   -o-transform:      rotate(-35deg);
+
+}
+.flower:after {
+   position: absolute;
+   display: block;
+   color: white;
+   top: 3px;
+   left: -105px;
+   width: 0px;
+   height: 0px;
+   border-right: 100px solid transparent;
+   border-bottom: 70px solid white;
+   border-left: 100px solid transparent;
+   -webkit-transform: rotate(-70deg);
+   -moz-transform:    rotate(-70deg);
+   -ms-transform:     rotate(-70deg);
+   -o-transform:      rotate(-70deg);
+   content: '';
+}
+
+
+.table{
+	width: 1000px;
+	height: 100px;
+	background: brown;
+	position:relative;
+	top:-500px;
+	left:0px;
+}
+
+.table-2{
+	width: 0;
+	height: 0;
+	border-bottom: 200px solid brown;
+	border-left: 200px solid transparent;
+	position:relative;
+	top:-800px;
+	left:0px;
+}
+
+
+.table-3{
+	width: 800px;
+	height: 200px;
+	background: brown;
+	position:relative;
+	top:-1000px;
+	left:200px;
+	z-index:0;
+}
+
+
+
+
+.table-leg{
+	width: 30px;
+	height: 45px;
+	background: brown;
+	position:relative;
+	top:-900px;
+	left:0px;
+}
+
+
+
+.table-leg-2{
+	width: 35px;
+	height: 50px;
+	background: brown;
+	position:relative;
+	top:-950px;
+	left:180px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
