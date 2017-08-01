@@ -1,5 +1,6 @@
 var initial1 = 'C';
 var initial2 = 'D';
+var rowSkip = 0;
 var currentColumn;
 var dotHTML = '<div class="column">'
   + '<div class="dot"><div class="initial"></div></div><div class="line6 line-h lineaction"></div><div class="line1 line-v lineaction"></div>'
@@ -48,7 +49,7 @@ function nextCol() {
 }
 
 function setLine(n, index) {
-  
+
   var line = currentColumn.find('.line' + n);
 
   line.css({"background-color": "black", "opacity": "1"});
@@ -76,16 +77,17 @@ function drawKey(press) {
     // B
     case 66:
       setColumn([1, 2, 3, 4, 6, 8, 10]);
-      setColumn([6, 8, 10]);
+      setColumn([6, 8, 9, 10]);
       setColumn([1, 2, 8, 10]);
       setColumn([3, 4]);
       nextCol();
       break;
     // C
     case 67:
-      setColumn([1, 2, 3, 4, 6, 10]);
-      setColumn([6, 10]);
-      setColumn([1, 10]);
+      setColumn([ 2, 3, 7, 9]);
+      setColumn([1, 2, 3, 4, 6, 7, 9, 10]);
+      setColumn([6, 7, 9, 10]);
+      setColumn([1, 4]);
       nextCol();
       break;
     // D
@@ -115,16 +117,23 @@ function drawKey(press) {
     // G
     case 71:
       setColumn([1, 2, 3, 4, 6, 10]);
-      setColumn([6, 10]);
-      setColumn([6, 8, 10]);
+      setColumn([1, 2, 3, 4, 6, 10]);
+      setColumn([3, 6, 8, 9,10]);
       setColumn([3, 4]);
       nextCol();
       break;
+    // case 71:
+      //   setColumn([2, 3, 7, 9]);
+      //   setColumn([1, 2, 3, 4, 6, 9, 10]);
+      //   setColumn([2, 6, 7, 8, 9, 10]);
+      //   setColumn([2,3, 4]);
+      //   nextCol();
+      //   break;
     // H
     case 72:
-      setColumn([1, 2, 3, 4, 8]);
-      setColumn([8]);
-      setColumn([8]);
+      setColumn([1, 2, 3, 4, 7, 8]);
+      setColumn([7, 8]);
+      setColumn([7, 8]);
       setColumn([1, 2, 3, 4]);
       nextCol();
       break;
@@ -137,24 +146,56 @@ function drawKey(press) {
       break;
     // J
     case 74:
+      // setColumn([4, 6, 9, 10]);
+      // setColumn([1, 2, 3, 6, 10]);
+      // setColumn([1, 2, 3, 4, 6,]);
+      // nextCol();
+      // break;
+
       setColumn([4, 6, 9, 10]);
+      setColumn([4, 6, 10]);
       setColumn([1, 2, 3, 4, 6, 10]);
-      setColumn([1, 2, 3, 4, 6,]);
+      setColumn([1, 2, 3, 4]);
       nextCol();
       break;
     // K
-    case 75:
-      setColumn([1, 2, 3, 4, 8]);
-      setColumn([8]);
-      setColumn([1, 2, 8]);
-      setColumn([3, 4]);
-      nextCol();
-      break;
+    // case 75:
+    //   setColumn([1, 2, 3, 4, 8]);
+    //   setColumn([8]);
+    //   setColumn([1, 2, 8]);
+    //   setColumn([3, 4]);
+    //   nextCol();
+    //   break;
+
+      // case 75:
+      //   setColumn([1, 2, 3, 4, 6, 10]);
+      //   setColumn([1, 4, 7, 9]);
+      //   setColumn([1, 2, 3, 4, 6, 7, 9, 10]);
+      //   setColumn([1, 4]);
+      //   nextCol();
+      //   break;
+
+        // case 75:
+        //   setColumn([1, 2, 3, 4, 6, 10]);
+        //   setColumn([1, 2, 3, 4, 8]);
+        //   setColumn([1, 2, 8]);
+        //   setColumn([3, 4]);
+        //   nextCol();
+        //   break;
+
+          case 75:
+            setColumn([1, 2, 3, 4, 8]);
+            setColumn([1, 2, 6, 8]);
+            setColumn([1, 2, 3, 4, 8, 10]);
+            setColumn([3, 4]);
+            nextCol();
+            break;
+
+
     // L
     case 76:
       setColumn([1, 2, 3, 4, 6, 10]);
       setColumn([1, 2, 3, 4, 10]);
-      setColumn([10]);
       setColumn([10]);
       setColumn([4]);
       nextCol();
@@ -179,10 +220,10 @@ function drawKey(press) {
       break;
     // O
     case 79:
-      setColumn([1, 2, 3, 4, 6, 10]);
-      setColumn([2, 3, 6, 7, 9, 10]);
-      setColumn([2, 3, 6, 10]);
-      setColumn([1, 2, 3, 4]);
+      setColumn([2, 3, 7, 9]);
+      setColumn([1, 2, 3, 4, 6, 7, 9, 10]);
+      setColumn([1, 2, 3, 4, 7, 9]);
+      setColumn([2, 3]);
       nextCol();
       break;
     // P
@@ -213,6 +254,7 @@ function drawKey(press) {
     case 83:
       setColumn([1, 2, 4, 6, 8, 9, 10]);
       setColumn([6, 8, 9, 10]);
+      setColumn([6, 8, 9, 10]);
       setColumn([3, 4]);
       nextCol();
       break;
@@ -234,10 +276,17 @@ function drawKey(press) {
       break;
     // V
     case 86:
-      setColumn([1, 2, 3, 4, 6, 10]);
-      setColumn([1, 2, 4, 8, 9]);
-      setColumn([1, 2, 3, 6, 8]);
-      setColumn([1, 2]);
+      // setColumn([1, 2, 3, 4, 6, 10]);
+      // setColumn([1, 2, 4, 8, 9]);
+      // setColumn([1, 2, 3, 6, 8]);
+      // setColumn([1, 2]);
+      // nextCol();
+      // break;
+
+      setColumn([1, 2, 8]);
+      setColumn([3, 9]);
+      setColumn([4, 9, 10]);
+      setColumn([1, 2, 3, 4]);
       nextCol();
       break;
     // W
@@ -260,12 +309,21 @@ function drawKey(press) {
       break;
     // Y
     case 89:
-      setColumn([6]);
-      setColumn([1, 2, 8, 10]);
-      setColumn([8, 10]);
-      setColumn([1, 2, 3, 4]);
-      nextCol();
-      break;
+      // setColumn([6]);
+      // setColumn([1, 2, 8, 10]);
+      // setColumn([8, 10]);
+      // setColumn([1, 2, 3, 4]);
+      // nextCol();
+      // break;
+
+      case 89:
+        setColumn([1,2, 6, 8, 10]);
+        setColumn([1, 2, 8, 10]);
+        setColumn([1, 2, 3, 4, 6, 10]);
+        setColumn([1, 2, 3, 4]);
+        nextCol();
+        break;
+
     // Z
     case 90:
       setColumn([3, 4, 6, 8, 9, 10]);
@@ -308,6 +366,12 @@ function drawKey(press) {
         zoom = true;
       }
       break;
+
+    //  enter or return
+    case 13:
+    alert("rowskip");
+      for (var i = 0; i < rowSkip; i++) { nextCol();}
+      break;
   }
 
 }
@@ -319,12 +383,14 @@ function start() {
   if (hsize > 50) hsize = 50;
   if (vsize < 1) vsize = 1;
   if (hsize < 1) hsize = 1;
+  var rowSkip = hsize*5;
   initial1 = $("input[name=initial1]").val();
   initial2 = $("input[name=initial2]").val();
   var currentInitial = initial1;
   var totalDotNum = vsize*5*hsize;
   var dotWrapper = $('.dot-wrapper');
   var playerCount = 0;
+
 
   dotWrapper.width(20+(27*5*hsize)).height(20+(27*5*vsize));
 
@@ -362,5 +428,6 @@ function start() {
 
   $('.menu').toggle();
   dotWrapper.toggle();
+
 
 }
