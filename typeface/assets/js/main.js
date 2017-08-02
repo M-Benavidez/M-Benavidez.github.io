@@ -122,13 +122,7 @@ function drawKey(press) {
       setColumn([3, 4]);
       nextCol();
       break;
-    // case 71:
-      //   setColumn([2, 3, 7, 9]);
-      //   setColumn([1, 2, 3, 4, 6, 9, 10]);
-      //   setColumn([2, 6, 7, 8, 9, 10]);
-      //   setColumn([2,3, 4]);
-      //   nextCol();
-      //   break;
+    
     // H
     case 72:
       setColumn([1, 2, 3, 4, 7, 8]);
@@ -146,12 +140,7 @@ function drawKey(press) {
       break;
     // J
     case 74:
-      // setColumn([4, 6, 9, 10]);
-      // setColumn([1, 2, 3, 6, 10]);
-      // setColumn([1, 2, 3, 4, 6,]);
-      // nextCol();
-      // break;
-
+      
       setColumn([4, 6, 9, 10]);
       setColumn([4, 6, 10]);
       setColumn([1, 2, 3, 4, 6, 10]);
@@ -159,37 +148,14 @@ function drawKey(press) {
       nextCol();
       break;
     // K
-    // case 75:
-    //   setColumn([1, 2, 3, 4, 8]);
-    //   setColumn([8]);
-    //   setColumn([1, 2, 8]);
-    //   setColumn([3, 4]);
-    //   nextCol();
-    //   break;
-
-      // case 75:
-      //   setColumn([1, 2, 3, 4, 6, 10]);
-      //   setColumn([1, 4, 7, 9]);
-      //   setColumn([1, 2, 3, 4, 6, 7, 9, 10]);
-      //   setColumn([1, 4]);
-      //   nextCol();
-      //   break;
-
-        // case 75:
-        //   setColumn([1, 2, 3, 4, 6, 10]);
-        //   setColumn([1, 2, 3, 4, 8]);
-        //   setColumn([1, 2, 8]);
-        //   setColumn([3, 4]);
-        //   nextCol();
-        //   break;
-
-          case 75:
-            setColumn([1, 2, 3, 4, 8]);
-            setColumn([1, 2, 6, 8]);
-            setColumn([1, 2, 3, 4, 8, 10]);
-            setColumn([3, 4]);
-            nextCol();
-            break;
+    
+      case 75:
+      setColumn([1, 2, 3, 4, 8]);
+      setColumn([1, 2, 6, 8]);
+      setColumn([1, 2, 3, 4, 8, 10]);
+      setColumn([3, 4]);
+      nextCol();
+      break;
 
 
     // L
@@ -276,13 +242,6 @@ function drawKey(press) {
       break;
     // V
     case 86:
-      // setColumn([1, 2, 3, 4, 6, 10]);
-      // setColumn([1, 2, 4, 8, 9]);
-      // setColumn([1, 2, 3, 6, 8]);
-      // setColumn([1, 2]);
-      // nextCol();
-      // break;
-
       setColumn([1, 2, 8]);
       setColumn([3, 9]);
       setColumn([4, 9, 10]);
@@ -308,14 +267,7 @@ function drawKey(press) {
       nextCol();
       break;
     // Y
-    case 89:
-      // setColumn([6]);
-      // setColumn([1, 2, 8, 10]);
-      // setColumn([8, 10]);
-      // setColumn([1, 2, 3, 4]);
-      // nextCol();
-      // break;
-
+      
       case 89:
         setColumn([1,2, 6, 8, 10]);
         setColumn([1, 2, 8, 10]);

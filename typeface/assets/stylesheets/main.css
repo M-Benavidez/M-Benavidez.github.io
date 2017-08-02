@@ -8,6 +8,19 @@ body {
   position: relative;
 }
 
+
+h2{
+  font-family: 'orbitron', sans-serif;
+  font-size: 30px;
+}
+
+p{
+  font-family: 'orbitron', sans-serif;
+  font-size: 15px;
+  display: inline;
+  margin-bottom:20px;
+}
+
 .dot-wrapper {
   width:300px;
   height:100px;
@@ -54,6 +67,9 @@ body {
   text-align: center;
   cursor: pointer;
   user-select: none;
+  font-family: 'orbitron', sans-serif;
+  font-size: 10px;
+  margin-top:5px;
 }
 
 .line-h {

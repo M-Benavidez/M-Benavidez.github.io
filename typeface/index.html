@@ -5,6 +5,7 @@
 		<script src="assets/js/jquery.min.js"></script>
 		<script src="assets/js/main.js"></script>
 		<link rel="stylesheet" href="assets/stylesheets/main.css">
+		<link href="https://fonts.googleapis.com/css?family=Orbitron" rel="stylesheet">
 		<title>Timbiriche 35</title>
 	</head>
 
@@ -12,19 +13,20 @@
 
     <div class="menu">
 
-      <h2> Please select the size of the canvas (min 1x1, max 40x25)
-        and the initials for two players (max two letters each):</h2>
+      <h2> Please select the size of the canvas and the initials for two players </h2>
 
-      <p><br> Canvas Size:
-        <input type="number" name="vsize" min="1" max="40" value="5"> Rows
-        X <input type="number" name="hsize" min="1" max="25" value="10"> Columns
-      </p>
-
+      <p><br> Canvas Size:<br>
+      <p>(min 1x1, max 40x25)</p><br>
+      <input type="number" name="vsize" min="1" max="40" value="5"> Rows
+      X<input type="number" name="hsize" min="1" max="25" value="10"> Columns
+      </p><br>
+      <p><br> Initials:<p>
+	  <br><p>(max two letters each):</p>
       <p><br> Red: <input type="text" name="initial1" maxlength="2" size="3" value="A">
-        <br><br> Blue: <input type="text" name="initial2" maxlength="2" size="3" value="B">
-      </p>
+      <br><br> Blue: <input type="text" name="initial2" maxlength="2" size="3" value="B">
+      </p><br>
 
-      <p><br><button name="start" type="button" onclick="start()">Start!</button></p>
+      <p><br><button name="start" type="button" onclick="start()">Start!</button></p><br>
 
 			<p><br>When in the canvas, you can use right-click to erase drawn figures,
 				left bracket ([) to zoom in and right bracket (]) to hide the dots for
@@ -37,3 +39,6 @@
 	</body>
 
 </html>
+
+
+ 
