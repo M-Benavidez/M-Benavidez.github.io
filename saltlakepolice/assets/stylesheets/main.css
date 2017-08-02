@@ -175,28 +175,37 @@ nav a:hover, nav a:active {
 }
 
 #logo1 {
-  position: absolute;
+  float: left;
   z-index: -1;
   width: 30%;
 }
 
 #logo2 {
-  position: absolute;
+  float: left;
   width: 55%;
-  margin-left: 45%;
+  margin-left: 15%;
 }
 
 #uncover {
   color: red;
 }
 
+/*.popup {
+  position:fixed;
+  z-index: 20;
+  visibility: hidden;
+  display: block;
+}
+
+.popup:hover {
+  visibility: visible;
+}*/
+
 /* General Content Layout */
 
 .front {
   max-width: 960px;
   margin: auto;
-  position: relative;
-  margin-top: 200px;
 }
 
 .level2, .level3 {
@@ -212,15 +221,44 @@ nav a:hover, nav a:active {
 
 .symbol {
   font-size: 120px;
-  float: left;
+  transform-origin: top left;
+  position: absolute;
 }
 
 #logox {
-  transform-origin: top left;
   transform: scaleX(4);
-  position: relative;
   z-index: 0;
-  top: -150px;
+  top: 10px;
+}
+
+#lawmenx1 {
+  transform: scale(2.8, 1.8);
+  top: 30px;
+  left: 140px;
+}
+
+#lawmenx2 {
+  transform: scale(3.2, 2.2);
+  top: 40px;
+  left: 130px;
+}
+
+#lawmenx3 {
+  transform: rotate(20deg) scale(3.4,2.4);
+  top: 30px;
+  left: 120px;
+}
+
+#lawmenx4 {
+  transform: rotate(10deg) scaleX(2);
+  top: 110px;
+  left: 130px;
+}
+
+#wantedx4 {
+  transform: rotate(20deg) scaleX(2);
+  top: 65px;
+  left: 220px;
 }
 
 .dean {
@@ -288,4 +326,5 @@ nav a:hover, nav a:active {
 
 #lawmen p {
   text-align: center;
+  position: relative;
 }

@@ -19,10 +19,12 @@ function level3() {
   $(document.body).css({"background-image":"-webkit-linear-gradient(burlywood, brown)"});
   $(document.body).css({"background-image":"linear-gradient(burlywood, brown)"});
 
+  document.getElementById("audio").play();
+
 }
 
 function resetVisits() {
-  Cookies.set('visits', '0', {expires: 7});
+  Cookies.set('visits', '1', {expires: 7});
   level3();
 }
 
@@ -32,7 +34,7 @@ $(document).ready(function() {
 
   if (typeof visits == 'undefined') {
     Cookies.set('visits', '1', {expires: 7});
-    visits = 0;
+    visits = 1;
   }
   else {
     visits = parseInt(visits);
