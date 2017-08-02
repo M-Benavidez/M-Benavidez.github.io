@@ -66,7 +66,6 @@ h1 {
 h2 {
     font-size: 30px;
     font-weight: bold;
-    color: Sienna;
     line-height: 40px;
 }
 
@@ -120,7 +119,6 @@ body {
 
 b {
     font-weight: bold;
-    color: Sienna;
 }
 
 p {
@@ -188,6 +186,10 @@ nav a:hover, nav a:active {
   margin: auto;
 }
 
+.level2, .level3 {
+  display: none;
+}
+
 /* Home Page Layout */
 
 #featuredstory {
@@ -197,9 +199,9 @@ nav a:hover, nav a:active {
 
 /* News Timeline Layout */
 
-#newsbody {
+/*#newsbody {
   background-image:-webkit-linear-gradient(burlywood, brown);
-}
+}*/
 
 #newspage h1, #newspage h2, #newspage b {
   color: Cornsilk;

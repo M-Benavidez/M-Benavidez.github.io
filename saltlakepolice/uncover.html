@@ -5,9 +5,12 @@
     <title>Salt Lake City "Police Department"</title>
     <link rel="stylesheet" type="text/css" href="assets/stylesheets/main.css">
     <link href="https://fonts.googleapis.com/css?family=Old+Standard+TT|Permanent+Marker" rel="stylesheet">
-  <head>
+    <script src="assets\js\js.cookie-2.1.4.min.js"></script>
+    <script src="assets\js\jquery-3.2.1.min.js"></script>
+    <script src="assets\js\main.js"></script>
+  </head>
 
-  <body>
+  <body onload="resetVisits()">
 
     <header>
       <nav>
@@ -17,7 +20,7 @@
           <li><a href="lawmen.html">Lawmen</a></li>
           <li><a href="most_wanted.html">Wanted</a></li>
           <li><a href="tips.html">Tips</a></li>
-          <!-- <li><a class="activelink" href="uncover.html">Uncover</a></li> -->
+          <li><a class="activelink" href="uncover.html">Uncover</a></li>
         </ul>
       </nav>
       <div class="slogan clearfix">
@@ -33,6 +36,9 @@
     </header>
 
     <div class="front">
+      <audio controls>
+        <source src="assets\media\hotcops.mp3" type="audio/mpeg">
+      </audio>
       <p> placeholder content </p>
     </div>
 
