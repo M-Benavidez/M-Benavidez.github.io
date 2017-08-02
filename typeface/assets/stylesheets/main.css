@@ -59,17 +59,17 @@ p{
 
 .initial {
   z-index: 4;
-  width: 20px;
-	height: 20px;
+  width: 16px;
+	height: 16px;
   position: absolute;
   top: 8px;
-  left: 7px;
+  left: 8px;
   text-align: center;
   cursor: pointer;
   user-select: none;
+  line-height: 16px;
   font-family: 'orbitron', sans-serif;
   font-size: 10px;
-  margin-top:5px;
 }
 
 .line-h {
