@@ -10,15 +10,15 @@ function level2() {
   $('.level2').show();
   $('.level1').hide();
 
-  $(document.body).css({"background-image":"-webkit-linear-gradient(burlywood, brown)"});
-  $(document.body).css({"background-image":"linear-gradient(burlywood, brown)"});
-
 }
 
 function level3() {
   level2();
   $('.level3').show();
 
+  $(document.body).css({"background-image":"-webkit-linear-gradient(burlywood, brown)"});
+  $(document.body).css({"background-image":"linear-gradient(burlywood, brown)"});
+  
 }
 
 function resetVisits() {
