@@ -190,6 +190,11 @@ nav a:hover, nav a:active {
   display: none;
 }
 
+.crazytext {
+  color: red;
+  font-family: 'Permanent Marker';
+}
+
 /* Home Page Layout */
 
 #featuredstory {
