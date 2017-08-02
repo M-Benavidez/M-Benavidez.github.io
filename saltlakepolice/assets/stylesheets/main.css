@@ -202,12 +202,14 @@ nav a:hover, nav a:active {
   display: none;
 }
 
+
 .crazytext {
   color: red;
   text-shadow: 1px 1px #000000;
   font-family: 'Permanent Marker';
 }
 
+<<<<<<< HEAD
 .symbol {
   font-size: 120px;
   float: left;
@@ -219,6 +221,24 @@ nav a:hover, nav a:active {
   position: relative;
   z-index: 0;
   top: -150px;
+=======
+.dean{
+  font-family: 
+
+}
+
+.aggression{
+
+}
+
+.money{
+
+}
+
+
+.ad{
+
+>>>>>>> origin/master
 }
 
 /* Home Page Layout */
