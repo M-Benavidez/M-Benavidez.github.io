@@ -92,19 +92,19 @@ h6 {
 
 a:link {
   text-decoration: none;
-  color: Sienna;
-}
-
-a:visited {
-  color: Sienna;
-}
-
-a:hover {
   color: #d28460;
 }
 
-a:active {
+a:visited {
+  color: #d28460;
+}
+
+a:hover {
   color: Sienna;
+}
+
+a:active {
+  color: #d28460;
 }
 
 body {
@@ -162,22 +162,27 @@ nav a:hover, nav a:active {
 }
 
 .slogan {
+  position: relative;
   margin: auto;
   margin-top: 40px;
   padding: 10px;
   max-width: 1040px;
 }
 
+.slogan a:link, .slogan a:visited {
+  color: Sienna;
+}
+
 #logo1 {
-  position: relative;
-  float: left;
+  position: absolute;
+  z-index: -1;
   width: 30%;
 }
 
 #logo2 {
-  float: left;
+  position: absolute;
   width: 55%;
-  margin-left: 15%;
+  margin-left: 45%;
 }
 
 #uncover {
@@ -189,6 +194,8 @@ nav a:hover, nav a:active {
 .front {
   max-width: 960px;
   margin: auto;
+  position: relative;
+  margin-top: 200px;
 }
 
 .level2, .level3 {
@@ -197,7 +204,21 @@ nav a:hover, nav a:active {
 
 .crazytext {
   color: red;
+  text-shadow: 1px 1px #000000;
   font-family: 'Permanent Marker';
+}
+
+.symbol {
+  font-size: 120px;
+  float: left;
+}
+
+#logox {
+  transform-origin: top left;
+  transform: scaleX(4);
+  position: relative;
+  z-index: 0;
+  top: -150px;
 }
 
 /* Home Page Layout */
