@@ -18,11 +18,12 @@ function level3() {
 
   $(document.body).css({"background-image":"-webkit-linear-gradient(burlywood, brown)"});
   $(document.body).css({"background-image":"linear-gradient(burlywood, brown)"});
-  
+
 }
 
 function resetVisits() {
   Cookies.set('visits', '0', {expires: 7});
+  level3();
 }
 
 $(document).ready(function() {
