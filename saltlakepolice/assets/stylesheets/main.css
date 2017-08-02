@@ -169,6 +169,7 @@ nav a:hover, nav a:active {
 }
 
 #logo1 {
+  position: relative;
   float: left;
   width: 30%;
 }
@@ -177,6 +178,10 @@ nav a:hover, nav a:active {
   float: left;
   width: 55%;
   margin-left: 15%;
+}
+
+#uncover {
+  color: red;
 }
 
 /* General Content Layout */
