@@ -113,17 +113,18 @@ p{
 	position:fixed;
 	top:558px;
 	left:78px;
-	z-index:4
+	z-index:6;
 	pointer-events:none;
+
 }
 
 #core{
-	width: 120px;
+	width: 115px;
 	height: 7px;
 	background: #E4B4C2;
 	position: fixed;
-	top: 562px;
-	left: 80px;
+	top: 563px;
+	left: 86px;
 }
 
 #core2{
