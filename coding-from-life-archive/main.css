@@ -57,6 +57,7 @@ p{
 	position: fixed;
 	top: 500px;
 	left: 20px;
+	pointer-events:none;
 }
 
 
@@ -72,6 +73,7 @@ p{
 	position: fixed;
 	top: 500px;
 	left: 270px;
+	pointer-events:none;
 }
 
 
@@ -98,6 +100,7 @@ p{
 	top:558px;
 	left:328px;
 	z-index:4;
+	pointer-events:none;
 }
 
 #wheelaccent2{
@@ -110,7 +113,8 @@ p{
 	position:fixed;
 	top:558px;
 	left:78px;
-	z-index:4;
+	z-index:4
+	pointer-events:none;
 }
 
 #core{
