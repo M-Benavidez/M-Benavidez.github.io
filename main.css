@@ -1,0 +1,155 @@
+body{
+  background:black;
+}
+
+h1{
+  color: crimson;
+  font-size: 30px;
+  font-family:'Comfortaa', sans-serif;
+  vertical-align:middle;
+  line-height: normal;
+  text-align:center;
+}
+
+a{
+  text-decoration: none;
+}
+
+@keyframes spin {
+  100% {
+    transform: rotateX(360deg);
+  }
+}
+
+.circle-spin {
+  position: relative;
+  margin: auto;
+  width: 500px;
+}
+
+#circle{
+  width: 500px;
+	height: 500px;
+	background: transparent;
+  border:solid white 20px;
+	-moz-border-radius: 800px;
+	-webkit-border-radius: 800px;
+	border-radius: 800px;
+  pointer-events: none;
+  animation: spin 4s linear infinite;
+  position: absolute;
+  margin-top:50px;
+  z-index: 4;
+}
+
+#title {
+  display:block;
+  width: 480px;
+  position: absolute;
+  margin-left: 30px;
+  margin-top: 280px;
+  z-index: 3;
+}
+
+
+
+
+
+.squaresr1{
+  display:inline-block;
+  display:flex;
+  justify-content: space-between;
+  margin:40px;
+  margin-left: 60px;
+}
+
+.squaresr1 a{
+  text-decoration: none;
+  font-family:'Comfortaa', sans-serif;
+  color:white;
+
+}
+
+.square {
+  text-align: center;
+  vertical-align: middle;
+  line-height: 250px;
+  color: white;
+}
+
+#square1{
+    width: 250px;
+	  height: 250px;
+	  background: transparent;
+    border:solid white 5px;
+    margin-right: 30px;
+  }
+
+
+#square2{
+  width: 250px;
+  height: 250px;
+  background: transparent;
+  border:solid white 5px;
+  margin-right: 30px;
+}
+
+
+#square3{
+  width: 250px;
+  height: 250px;
+  background: transparent;
+  border:solid white 5px;
+}
+
+
+.squaresr2{
+  display:inline-block;
+  display:flex;
+  justify-content: space-between;
+  margin:40px;
+  margin-left:60px;
+
+}
+
+.squaresr2 a{
+  text-decoration: none;
+  font-family:'Comfortaa', sans-serif;
+  color:white;
+
+}
+
+#square4{
+  width: 250px;
+  height: 250px;
+  background: transparent;
+  border:solid white 5px;
+  margin-right: 30px;
+}
+
+
+#square5{
+  width: 250px;
+  height: 250px;
+  background: transparent;
+  border:solid white 5px;
+  margin-right: 30px;
+}
+
+
+
+#square6{
+  width: 250px;
+  height: 250px;
+  background: transparent;
+  border:solid white 5px;
+}
+
+/*#movingcircle{
+  width: 220px;
+	height: 220px;
+	background: red;
+	-moz-border-radius: 120px;
+	-webkit-border-radius: 120px;
+	border-radius: 120px;
+}*/
