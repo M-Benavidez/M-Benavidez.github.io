@@ -209,7 +209,6 @@ nav a:hover, nav a:active {
   font-family: 'Permanent Marker';
 }
 
-<<<<<<< HEAD
 .symbol {
   font-size: 120px;
   float: left;
@@ -221,9 +220,10 @@ nav a:hover, nav a:active {
   position: relative;
   z-index: 0;
   top: -150px;
-=======
-.dean{
-  font-family: 
+}
+
+.dean {
+  font-family:
 
 }
 
@@ -238,7 +238,6 @@ nav a:hover, nav a:active {
 
 .ad{
 
->>>>>>> origin/master
 }
 
 /* Home Page Layout */
